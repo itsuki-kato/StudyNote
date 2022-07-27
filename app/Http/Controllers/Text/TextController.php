@@ -9,7 +9,7 @@ use App\Models\Category;
 
 class TextController extends Controller
 {
-        /**
+    /**
      * Create a new controller instance.
      *
      * @return void
@@ -27,8 +27,15 @@ class TextController extends Controller
         // 検索フォームから送信されたキーワードを取得する
         $keyword = $request->input('keyword');
 
+        $category_id = $request->category_id;
+
         // 閲覧用のカテゴリ名を取得する。
         $Categories = Category::all();
+
+        // $Texts = $this->sortByCategory($category_id);
+        // if($Texts) {
+        //     return view('home', compact('Texts', 'Categories', 'keyword'));
+        // }
 
         // キーワードがあれば検索条件に合った一覧を表示する
         if ($keyword) {
@@ -45,6 +52,19 @@ class TextController extends Controller
         return view('home', compact('Texts', 'Categories', 'keyword'));
     }
 
+    // public function sortByCategory($category_id)
+    // {
+    //     if($category_id) {
+    //         $query = Text::query();
+    //         $query->where('category_id', $category_id);
+    //         $Texts = $query->paginate(8);
+    //     }
+
+    //     return [
+    //         'Texts' => $Texts
+    //     ];
+    // }
+
     /**
      * 新規作成画面を表示する
      */
@@ -58,7 +78,7 @@ class TextController extends Controller
     /**
      * 新規作成
      */
-    public function create_new(Request $request)
+    public function createText(Request $request)
     {
         $request->validate([
             'text' => 'required'
@@ -89,6 +109,7 @@ class TextController extends Controller
         return view('edit', compact('Text', 'Categories', 'targetCategoryName'));
     }
 
+    // TODO:editとマージする。
     /**
      * 編集内容を保存する
      */

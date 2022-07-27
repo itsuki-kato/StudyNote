@@ -35,7 +35,9 @@
                                             <tr>
                                                 @foreach($Categories as $Category)
                                                     @if($Text->category_id == $Category->id)
-                                                        <span class="category_lavel">{{ $Category->name }}</span>
+                                                        <a href="{{ route('home', ['category_id' => $Category->id]) }}">
+                                                            <span class="category_lavel">{{ $Category->name }}</span>
+                                                        </a>
                                                         <!-- 一致した時点でブレークする -->
                                                         @break
                                                     @endif
