@@ -15,11 +15,3 @@
             </div>
         </div>
     </div>
-    <!-- アコーディオンメニューの制御 -->
-    <script>
-        $(function () {
-            $('.side_category').on('click', function () {
-                $(this).next().slideToggle();
-            });
-        });
-    </script>

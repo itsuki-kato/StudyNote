@@ -74,7 +74,7 @@ ul {
 }
 
 .sideNav {
-    width: 175px;
+    width: 200px;
 }
 
 .category_nav {
@@ -102,6 +102,7 @@ ul {
     background: #f0f8ff;
     border: 1px solid #ccc;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 /* リストをホバーした時のアニメーション */
@@ -216,4 +217,9 @@ th.list_item {
 .category_item1 {
     border: 1px solid #000;
     padding: 10px 10px;
+}
+
+.col-md-8 {
+    flex: 0 0 auto;
+    width: 95.666667%;
 }

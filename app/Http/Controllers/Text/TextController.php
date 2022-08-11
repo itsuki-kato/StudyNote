@@ -32,38 +32,20 @@ class TextController extends Controller
         // 閲覧用のカテゴリ名を取得する。
         $Categories = Category::all();
 
-        // $Texts = $this->sortByCategory($category_id);
-        // if($Texts) {
-        //     return view('home', compact('Texts', 'Categories', 'keyword'));
-        // }
-
         // キーワードがあれば検索条件に合った一覧を表示する
         if ($keyword) {
             $user_id = $request->user()->id;
             $query = Text::query();
             $query
                 ->where('title', 'LIKE', "%{$keyword}%");
-            $Texts = $query->paginate(8);
+            $Texts = $query->orderBy('sort_no', 'ASC')->paginate(8);
         } else {
-            // それ以外だったら全件取得する
-            $Texts = Text::orderBy('created_at')->paginate(8);
+            // それ以外だったら全件取得する(sort_noの昇順で表示する)
+            $Texts = Text::orderBy('sort_no', 'ASC')->paginate(8);
         }
 
         return view('home', compact('Texts', 'Categories', 'keyword'));
     }
-
-    // public function sortByCategory($category_id)
-    // {
-    //     if($category_id) {
-    //         $query = Text::query();
-    //         $query->where('category_id', $category_id);
-    //         $Texts = $query->paginate(8);
-    //     }
-
-    //     return [
-    //         'Texts' => $Texts
-    //     ];
-    // }
 
     /**
      * 新規作成画面を表示する
@@ -134,5 +116,17 @@ class TextController extends Controller
         $Text->delete();
 
         return redirect('/home');
+    }
+
+    /**
+     * sort_noを更新する。
+     */
+    public function sortText(Request $request)
+    {
+        // Requestオブジェクトのajax()を使用するとboolで返してくれる。
+        $is_ajax = $request->ajax();
+        if($is_ajax) {
+            // TODO:sort_no更新の処理。
+        }
     }
 }

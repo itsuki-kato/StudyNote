@@ -958,9 +958,10 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvYXBwLmpzLmpzIiwibWFwcGluZ3MiOiJBQUFBQSxtQkFBTyxDQUFDLGdEQUFELENBQVAiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvYXBwLmpzP2NlZDYiXSwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZSgnLi9ib290c3RyYXAnKTtcbiJdLCJuYW1lcyI6WyJyZXF1aXJlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _studyNote_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./studyNote.js */ \"./resources/js/studyNote.js\");\n/* harmony import */ var _studyNote_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_studyNote_js__WEBPACK_IMPORTED_MODULE_0__);\n__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7OztBQUFBQSxtQkFBTyxDQUFDLGdEQUFELENBQVAiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvYXBwLmpzP2NlZDYiXSwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZSgnLi9ib290c3RyYXAnKTtcbmltcG9ydCBcIi4vc3R1ZHlOb3RlLmpzXCJcbiJdLCJuYW1lcyI6WyJyZXF1aXJlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
 
 /***/ }),
 
@@ -971,6 +972,16 @@ eval("__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");//
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("window._ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n\ntry {\n  __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n} catch (e) {}\n/**\n * We'll load the axios HTTP library which allows us to easily issue requests\n * to our Laravel back-end. This library automatically handles sending the\n * CSRF token as a header based on the value of the \"XSRF\" token cookie.\n */\n\n\nwindow.axios = __webpack_require__(/*! axios */ \"./node_modules/axios/index.js\");\nwindow.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';\n/**\n * Echo exposes an expressive API for subscribing to channels and listening\n * for events that are broadcast by Laravel. Echo and event broadcasting\n * allows your team to easily build robust real-time web applications.\n */\n// import Echo from 'laravel-echo';\n// window.Pusher = require('pusher-js');\n// window.Echo = new Echo({\n//     broadcaster: 'pusher',\n//     key: process.env.MIX_PUSHER_APP_KEY,\n//     cluster: process.env.MIX_PUSHER_APP_CLUSTER,\n//     forceTLS: true\n// });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvYm9vdHN0cmFwLmpzLmpzIiwibWFwcGluZ3MiOiJBQUFBQSxNQUFNLENBQUNDLENBQVAsR0FBV0MsbUJBQU8sQ0FBQywrQ0FBRCxDQUFsQjs7QUFFQSxJQUFJO0VBQ0FBLG1CQUFPLENBQUMsb0VBQUQsQ0FBUDtBQUNILENBRkQsQ0FFRSxPQUFPQyxDQUFQLEVBQVUsQ0FBRTtBQUVkO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7OztBQUVBSCxNQUFNLENBQUNJLEtBQVAsR0FBZUYsbUJBQU8sQ0FBQyw0Q0FBRCxDQUF0QjtBQUVBRixNQUFNLENBQUNJLEtBQVAsQ0FBYUMsUUFBYixDQUFzQkMsT0FBdEIsQ0FBOEJDLE1BQTlCLENBQXFDLGtCQUFyQyxJQUEyRCxnQkFBM0Q7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFFQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9qcy9ib290c3RyYXAuanM/NmRlNyJdLCJzb3VyY2VzQ29udGVudCI6WyJ3aW5kb3cuXyA9IHJlcXVpcmUoJ2xvZGFzaCcpO1xuXG50cnkge1xuICAgIHJlcXVpcmUoJ2Jvb3RzdHJhcCcpO1xufSBjYXRjaCAoZSkge31cblxuLyoqXG4gKiBXZSdsbCBsb2FkIHRoZSBheGlvcyBIVFRQIGxpYnJhcnkgd2hpY2ggYWxsb3dzIHVzIHRvIGVhc2lseSBpc3N1ZSByZXF1ZXN0c1xuICogdG8gb3VyIExhcmF2ZWwgYmFjay1lbmQuIFRoaXMgbGlicmFyeSBhdXRvbWF0aWNhbGx5IGhhbmRsZXMgc2VuZGluZyB0aGVcbiAqIENTUkYgdG9rZW4gYXMgYSBoZWFkZXIgYmFzZWQgb24gdGhlIHZhbHVlIG9mIHRoZSBcIlhTUkZcIiB0b2tlbiBjb29raWUuXG4gKi9cblxud2luZG93LmF4aW9zID0gcmVxdWlyZSgnYXhpb3MnKTtcblxud2luZG93LmF4aW9zLmRlZmF1bHRzLmhlYWRlcnMuY29tbW9uWydYLVJlcXVlc3RlZC1XaXRoJ10gPSAnWE1MSHR0cFJlcXVlc3QnO1xuXG4vKipcbiAqIEVjaG8gZXhwb3NlcyBhbiBleHByZXNzaXZlIEFQSSBmb3Igc3Vic2NyaWJpbmcgdG8gY2hhbm5lbHMgYW5kIGxpc3RlbmluZ1xuICogZm9yIGV2ZW50cyB0aGF0IGFyZSBicm9hZGNhc3QgYnkgTGFyYXZlbC4gRWNobyBhbmQgZXZlbnQgYnJvYWRjYXN0aW5nXG4gKiBhbGxvd3MgeW91ciB0ZWFtIHRvIGVhc2lseSBidWlsZCByb2J1c3QgcmVhbC10aW1lIHdlYiBhcHBsaWNhdGlvbnMuXG4gKi9cblxuLy8gaW1wb3J0IEVjaG8gZnJvbSAnbGFyYXZlbC1lY2hvJztcblxuLy8gd2luZG93LlB1c2hlciA9IHJlcXVpcmUoJ3B1c2hlci1qcycpO1xuXG4vLyB3aW5kb3cuRWNobyA9IG5ldyBFY2hvKHtcbi8vICAgICBicm9hZGNhc3RlcjogJ3B1c2hlcicsXG4vLyAgICAga2V5OiBwcm9jZXNzLmVudi5NSVhfUFVTSEVSX0FQUF9LRVksXG4vLyAgICAgY2x1c3RlcjogcHJvY2Vzcy5lbnYuTUlYX1BVU0hFUl9BUFBfQ0xVU1RFUixcbi8vICAgICBmb3JjZVRMUzogdHJ1ZVxuLy8gfSk7XG4iXSwibmFtZXMiOlsid2luZG93IiwiXyIsInJlcXVpcmUiLCJlIiwiYXhpb3MiLCJkZWZhdWx0cyIsImhlYWRlcnMiLCJjb21tb24iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/bootstrap.js\n");
+
+/***/ }),
+
+/***/ "./resources/js/studyNote.js":
+/*!***********************************!*\
+  !*** ./resources/js/studyNote.js ***!
+  \***********************************/
+/***/ (() => {
+
+eval("// home\n$(function () {\n  $(\".sortable\").sortable();\n  $(\".sortable\").sortable({\n    update: function update(event, ui) {\n      $.ajax({\n        // TODO:route名で指定できるようにする。\n        url: 'http://localhost:8888/laravel8/StudyNote/public/home/sort_text',\n        type: 'GET'\n      }).done(function (results) {\n        console.log('done');\n      }).fail(function (jqXHR, textStatus, errorThrown) {\n        console.log(\"ajax通信に失敗しました\");\n        console.log(jqXHR.status);\n        console.log(textStatus);\n        console.log(errorThrown.message);\n      });\n    }\n  });\n}); // sideNav\n\n$(function () {\n  $('.side_category').on('click', function () {\n    $(this).next().slideToggle();\n  });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvc3R1ZHlOb3RlLmpzLmpzIiwibmFtZXMiOlsiJCIsInNvcnRhYmxlIiwidXBkYXRlIiwiZXZlbnQiLCJ1aSIsImFqYXgiLCJ1cmwiLCJ0eXBlIiwiZG9uZSIsInJlc3VsdHMiLCJjb25zb2xlIiwibG9nIiwiZmFpbCIsImpxWEhSIiwidGV4dFN0YXR1cyIsImVycm9yVGhyb3duIiwic3RhdHVzIiwibWVzc2FnZSIsIm9uIiwibmV4dCIsInNsaWRlVG9nZ2xlIl0sInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvanMvc3R1ZHlOb3RlLmpzPzg2ZTciXSwic291cmNlc0NvbnRlbnQiOlsiLy8gaG9tZVxuJChmdW5jdGlvbigpIHtcbiAgICAkKFwiLnNvcnRhYmxlXCIpLnNvcnRhYmxlKCk7XG4gICAgJChcIi5zb3J0YWJsZVwiKS5zb3J0YWJsZSh7XG4gICAgICAgIHVwZGF0ZTogZnVuY3Rpb24oZXZlbnQsIHVpKSB7XG4gICAgICAgICAgICAkLmFqYXgoe1xuICAgICAgICAgICAgICAgIC8vIFRPRE86cm91dGXlkI3jgafmjIflrprjgafjgY3jgovjgojjgYbjgavjgZnjgovjgIJcbiAgICAgICAgICAgICAgICB1cmw6ICdodHRwOi8vbG9jYWxob3N0Ojg4ODgvbGFyYXZlbDgvU3R1ZHlOb3RlL3B1YmxpYy9ob21lL3NvcnRfdGV4dCcsXG4gICAgICAgICAgICAgICAgdHlwZTogJ0dFVCcsXG4gICAgICAgICAgICB9KS5kb25lKGZ1bmN0aW9uIChyZXN1bHRzKSB7XG4gICAgICAgICAgICAgICAgY29uc29sZS5sb2coJ2RvbmUnKTtcbiAgICAgICAgICAgIH0pLmZhaWwoZnVuY3Rpb24gKGpxWEhSLHRleHRTdGF0dXMsZXJyb3JUaHJvd24pIHtcbiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhcImFqYXjpgJrkv6HjgavlpLHmlZfjgZfjgb7jgZfjgZ9cIilcbiAgICAgICAgICAgICAgICBjb25zb2xlLmxvZyhqcVhIUi5zdGF0dXMpO1xuICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKHRleHRTdGF0dXMpO1xuICAgICAgICAgICAgICAgIGNvbnNvbGUubG9nKGVycm9yVGhyb3duLm1lc3NhZ2UpO1xuICAgICAgICAgICAgfSlcbiAgICAgICAgfVxuICAgIH0pO1xufSk7XG5cblxuXG4vLyBzaWRlTmF2XG4kKGZ1bmN0aW9uICgpIHtcbiAgICAkKCcuc2lkZV9jYXRlZ29yeScpLm9uKCdjbGljaycsIGZ1bmN0aW9uICgpIHtcbiAgICAgICAgJCh0aGlzKS5uZXh0KCkuc2xpZGVUb2dnbGUoKTtcbiAgICB9KTtcbn0pO1xuIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBQSxDQUFDLENBQUMsWUFBVztFQUNUQSxDQUFDLENBQUMsV0FBRCxDQUFELENBQWVDLFFBQWY7RUFDQUQsQ0FBQyxDQUFDLFdBQUQsQ0FBRCxDQUFlQyxRQUFmLENBQXdCO0lBQ3BCQyxNQUFNLEVBQUUsZ0JBQVNDLEtBQVQsRUFBZ0JDLEVBQWhCLEVBQW9CO01BQ3hCSixDQUFDLENBQUNLLElBQUYsQ0FBTztRQUNIO1FBQ0FDLEdBQUcsRUFBRSxnRUFGRjtRQUdIQyxJQUFJLEVBQUU7TUFISCxDQUFQLEVBSUdDLElBSkgsQ0FJUSxVQUFVQyxPQUFWLEVBQW1CO1FBQ3ZCQyxPQUFPLENBQUNDLEdBQVIsQ0FBWSxNQUFaO01BQ0gsQ0FORCxFQU1HQyxJQU5ILENBTVEsVUFBVUMsS0FBVixFQUFnQkMsVUFBaEIsRUFBMkJDLFdBQTNCLEVBQXdDO1FBQzVDTCxPQUFPLENBQUNDLEdBQVIsQ0FBWSxlQUFaO1FBQ0FELE9BQU8sQ0FBQ0MsR0FBUixDQUFZRSxLQUFLLENBQUNHLE1BQWxCO1FBQ0FOLE9BQU8sQ0FBQ0MsR0FBUixDQUFZRyxVQUFaO1FBQ0FKLE9BQU8sQ0FBQ0MsR0FBUixDQUFZSSxXQUFXLENBQUNFLE9BQXhCO01BQ0gsQ0FYRDtJQVlIO0VBZG1CLENBQXhCO0FBZ0JILENBbEJBLENBQUQsQyxDQXNCQTs7QUFDQWpCLENBQUMsQ0FBQyxZQUFZO0VBQ1ZBLENBQUMsQ0FBQyxnQkFBRCxDQUFELENBQW9Ca0IsRUFBcEIsQ0FBdUIsT0FBdkIsRUFBZ0MsWUFBWTtJQUN4Q2xCLENBQUMsQ0FBQyxJQUFELENBQUQsQ0FBUW1CLElBQVIsR0FBZUMsV0FBZjtFQUNILENBRkQ7QUFHSCxDQUpBLENBQUQifQ==\n//# sourceURL=webpack-internal:///./resources/js/studyNote.js\n");
 
 /***/ }),
 
@@ -1089,6 +1100,18 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
 /******/ 		};
 /******/ 	})();
 /******/ 	

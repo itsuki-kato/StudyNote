@@ -18,6 +18,9 @@ Auth::routes();
 // TOPページ
 Route::get('/home', [App\Http\Controllers\Text\TextController::class, 'index'])->name('home');
 
+// sort_noを入れ替え
+Route::get('/home/sort_text', [App\Http\Controllers\Text\TextController::class, 'sortText'])->name('sortText');
+
 // Text
 // 新規作成
 Route::get('/create', [App\Http\Controllers\Text\TextController::class, 'create'])->name('create');
