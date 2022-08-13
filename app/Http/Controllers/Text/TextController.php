@@ -126,7 +126,10 @@ class TextController extends Controller
         // Requestオブジェクトのajax()を使用するとboolで返してくれる。
         $is_ajax = $request->ajax();
         if($is_ajax) {
-            // TODO:sort_no更新の処理。
+            // この書き方でも取得できる。
+            // $sortNos = $request->sortNos;
+            $result = $request->all();
+            $sortNos = $result['sortNos'];
         }
     }
 }

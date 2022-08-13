@@ -23,14 +23,11 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <form action="" method="post">
-                            <input type="hidden" id="sort_update" name="sort_update" />
-                            <p><input type="submit" value="送信"></p>
-                            <div class="lists_wrapper">
-                                <ul class="sortable">
-                                    @foreach($Texts as $Text)
+                        <div class="lists_wrapper">
+                            <ul id="sortable">
+                                @foreach($Texts as $Text)
+                                <li id="{{ $Text->sort_no }}" class="list sortable-item">
                                     <div class="list_wrapper">
-                                        <li id="{{ $Text->sort_no }}" class="list">
                                             <table class="content_table">
                                                 <tr>
                                                     @foreach($Categories as $Category)
@@ -73,11 +70,10 @@
                                                     </div>
                                                 </td>
                                             </tr>
+                                        </div>
                                         </li>
-                                    </div>
-                                    @endforeach
-                                </form>
-                                    {{ $Texts->appends(request()->query())->links() }}
+                                @endforeach
+                                {{ $Texts->appends(request()->query())->links() }}
                             </ul>
                         </div>
                     </div>

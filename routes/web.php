@@ -19,7 +19,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\Text\TextController::class, 'index'])->name('home');
 
 // sort_noを入れ替え
-Route::get('/home/sort_text', [App\Http\Controllers\Text\TextController::class, 'sortText'])->name('sortText');
+Route::post('/home/sort_text', [App\Http\Controllers\Text\TextController::class, 'sortText'])->name('sortText');
 
 // Text
 // 新規作成
