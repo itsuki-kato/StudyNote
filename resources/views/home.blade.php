@@ -26,7 +26,7 @@
                         <div class="lists_wrapper">
                             <ul id="sortable">
                                 @foreach($Texts as $Text)
-                                <li id="{{ $Text->sort_no }}" class="list sortable-item">
+                                <li id="{{ $Text->id }}" class="list sortable-item" data-text-id="{{ $Text->id }}" data-sort-no="{{ $Text->sort_no }}">
                                     <div class="list_wrapper">
                                             <table class="content_table">
                                                 <tr>

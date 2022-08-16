@@ -129,7 +129,15 @@ class TextController extends Controller
             // この書き方でも取得できる。
             // $sortNos = $request->sortNos;
             $result = $request->all();
+            // 新しいsortNos(入れ替えた後のidの配列)
             $sortNos = $result['sortNos'];
+            $i = 1;
+            foreach ($sortNos as $sortNo) {
+                $TargetText = Text::find($sortNo);
+                $TargetText->sort_no = $i;
+                $TargetText->save();
+                $i++;
+            }
         }
     }
 }

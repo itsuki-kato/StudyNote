@@ -18,7 +18,7 @@ $(function() {
                 type: 'post',
                 // サーバーから返却されるデータの型を指定する。
                 // TODO:ControllerからJSONで返却してパースエラーを消す。
-                dataType: 'json',
+                dataType: '',
                 // サーバーに送信する値。
                 data: {
                     'sortNos': sortNos,
