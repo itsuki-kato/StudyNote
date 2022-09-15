@@ -14,10 +14,10 @@ $(function () {
 /**
  * Ajax通信用メソッド(TODO：引数が多いので要検討。)
  *
- * @param mix data
- * @param string data_type
  * @param string method
  * @param string route_name
+ * @param string data_type
+ * @param mix data
  */
 function exeAjax(method = "", route_name = "", data_type = "", data = "") {
     // post送信の場合はcsrf-tokenが必須。ajaxSetup()でデフォルト値を指定。
