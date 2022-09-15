@@ -125,12 +125,14 @@ class TextController extends Controller
     {
         // Requestオブジェクトのajax()を使用するとboolで返してくれる。
         $is_ajax = $request->ajax();
+
         if($is_ajax) {
-            // この書き方でも取得できる。
-            // $sortNos = $request->sortNos;
+            // この書き方でもAjaxから値を取得できる。
+            // $sortNos = $request->target_data;
             $result = $request->all();
-            // 新しいsortNos(入れ替えた後のidの配列)
-            $sortNos = $result['sortNos'];
+            // Ajaxで取得した、新しいsortNos(入れ替えた後のidの配列)を取得する。
+            $sortNos = $result['target_data'];
+
             $i = 1;
             foreach ($sortNos as $sortNo) {
                 $TargetText = Text::find($sortNo);
